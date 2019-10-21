@@ -1,11 +1,11 @@
 import React from "react";
 
-const Quote = ({ quote, character, image }) => (
+const Quote = ({ profile }) => (
     <figure>
-        <img src={image} alt={character} />
+        <img src={profile.image} alt={profile.character} />
         <figcaption>
-            <blockquote>{quote}</blockquote>
-            <cite>{character}</cite>
+            <blockquote>{profile.quote}</blockquote>
+            <cite>{profile.character}</cite>
         </figcaption>
     </figure>
 );
