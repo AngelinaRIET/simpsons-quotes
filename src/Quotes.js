@@ -1,4 +1,5 @@
 import React from "react";
+import Quote from "./Quote";
 // src/Quotes.js
 const quotes = [
     {
@@ -31,10 +32,11 @@ const quotes = [
 
 const Quotes = () => (
     <div>
-        {quotes.map(quote => (
-            <img src={quote.image} />
+        {quotes.map(profile => (
+            <Quote profile={profile} />
         ))}
     </div>
 );
 
 export default Quotes;
+
