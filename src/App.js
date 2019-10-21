@@ -27,12 +27,12 @@ class App extends Component {
           <h1 className="App-title">Simpsons Quotes</h1>
 
         </header>
+        <div>
+          <button onClick={() => this.handleClick()}>Working/Break </button>
+        </div>
         <Lamp on />
         <Lamp />
         <Quotes />
-        <div>
-          <button onClick={() => this.handleClick()}>Stop/Start Working</button>
-        </div>
 
       </div>
     );
